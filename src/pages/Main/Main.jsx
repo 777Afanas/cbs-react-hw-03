@@ -1,8 +1,12 @@
 import './Main.css';
+import data from '../../data/data.json'
+import Articles from '../../components/Articles';
 
 
 const Main = () => {
-    return  <div className="Main"></div>;
+    return <div className="Main">
+        <Articles data={data} />
+    </div>;
     
 }
 
