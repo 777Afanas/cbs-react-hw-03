@@ -1,17 +1,12 @@
 import "./Sidebar.css";
 import data from "../../data/data.json";
+import Topics from "../../components/Topics";
 
 const Sidebar = () => {
   return (
     <div className="Sidebar">
       <nav>
-        <ul>
-          {data.map((obj, idx) => (
-            <li key={idx}>
-              <a href={obj.href}>{obj.title}</a>
-            </li>
-          ))}
-        </ul>
+        <Topics data={ data } />
       </nav>
     </div>
   );
