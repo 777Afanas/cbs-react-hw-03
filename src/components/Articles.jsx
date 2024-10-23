@@ -1,17 +1,13 @@
-// import data from '../data/data.json'
+import Article from "./Article";
 
 function Articles({ data }) {
-    return <>
-        {data.map((item, idx) => (
-            <section key={idx} >
-                <h2>{item.title}</h2>
-                <div>
-                    <p>{item.body}</p>
-                </div>
-                </section>
-            ))}         
-    </>;
-    
+  return (
+    <>
+      {data.map((item, idx) => (
+        <Article key={idx} item={item} />
+      ))}
+    </>
+  );
 }
 
 export default Articles;

@@ -6,7 +6,7 @@ import Sidebar from "./pages/Sidebar/Sidebar"
 
 function App() { 
   return (     
-    <div className="conteiner">
+    <div className="container">
       <Header />
       <Main />
       <Sidebar />
